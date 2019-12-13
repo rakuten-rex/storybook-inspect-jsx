@@ -216,6 +216,7 @@ This source code is licensed under the MIT license found in the LICENSE file in 
             .replace(/__COMPONENT_NAME__/g, name.replace('@rakuten-rex/', ''))
             .replace(/__VERSION__/g, version)
             .replace(/__DESCRIPTION__/g, description)
+            .replace(/__JSXTOSTRING_VERSION__/g, dependencies['jsx-to-string'])
             .replace(/__PRETTY_VERSION__/g, dependencies.pretty)
             .replace(/__PRISMJS_VERSION__/g, dependencies.prismjs)
             .replace(/__PROPSTYPE_VERSION__/g, dependencies['prop-types'])

@@ -39,6 +39,7 @@
     "node": ">=10"
   },
   "dependencies": {
+    "jsx-to-string": "__JSXTOSTRING_VERSION__",
     "pretty": "__PRETTY_VERSION__",
     "prismjs": "__PRISMJS_VERSION__"
   },
