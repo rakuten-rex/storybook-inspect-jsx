@@ -4,8 +4,8 @@ import React from 'react';
 import addons from '@storybook/addons';
 import InspectHtml from '../storybook-inspect-jsx/InspectJsx';
 
-export default addons.register('storybook/inspecthtml', api => {
-  addons.addPanel('storybook/inspecthtml/panel', {
+export default addons.register('storybook/inspectjsx', api => {
+  addons.addPanel('storybook/inspectjsx/panel', {
     title: 'Inspect JSX',
     render: ({ active }) => {
       const channel = addons.getChannel();
@@ -15,7 +15,7 @@ export default addons.register('storybook/inspecthtml', api => {
           channel={channel}
           api={api}
           active={active}
-          key="inspect-html"
+          key="inspect-jsx"
         />
       );
     },
