@@ -1,6 +1,6 @@
 {
   "name": "@rakuten-rex/storybook-inspect-jsx",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Inspect a React component JSX output",
   "main": "src/index.jsx",
   "scripts": {
