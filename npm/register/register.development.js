@@ -1,6 +1,6 @@
 /*!
  * 
- * @license @rakuten-rex/storybook-inspect-jsx v1.3.2 2019-12-13
+ * @license @rakuten-rex/storybook-inspect-jsx v1.3.3 2019-12-13
  * register/register.development.js
  * 
  * Copyright (c) 2018-present, Rakuten, Inc.
@@ -543,8 +543,8 @@ InspectJsx_InspectJsx.displayName = "InspectJsx";
 
 
 
-/* harmony default export */ var register = __webpack_exports__["default"] = (addons_default.a.register('storybook/inspecthtml', function (api) {
-  addons_default.a.addPanel('storybook/inspecthtml/panel', {
+/* harmony default export */ var register = __webpack_exports__["default"] = (addons_default.a.register('storybook/inspectjsx', function (api) {
+  addons_default.a.addPanel('storybook/inspectjsx/panel', {
     title: 'Inspect JSX',
     render: function render(_ref) {
       var active = _ref.active;
@@ -553,7 +553,7 @@ InspectJsx_InspectJsx.displayName = "InspectJsx";
         channel: channel,
         api: api,
         active: active,
-        key: "inspect-html"
+        key: "inspect-jsx"
       });
     }
   });
