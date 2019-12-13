@@ -1,6 +1,6 @@
 /*!
  * 
- * @license @rakuten-rex/storybook-inspect-html v1.3.1 2019-12-13
+ * @license @rakuten-rex/storybook-inspect-jsx v1.3.0 2019-12-13
  * register/register.development.js
  * 
  * Copyright (c) 2018-present, Rakuten, Inc.
@@ -11,12 +11,12 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("react"), require("@storybook/addons"), require("prismjs"), require("pretty"));
 	else if(typeof define === 'function' && define.amd)
-		define("rakutenRexStorybookInspectHtml", ["react", "@storybook/addons", "prismjs", "pretty"], factory);
+		define("rakutenRexStorybookInspectJsx", ["react", "@storybook/addons", "prismjs", "pretty"], factory);
 	else if(typeof exports === 'object')
-		exports["rakutenRexStorybookInspectHtml"] = factory(require("react"), require("@storybook/addons"), require("prismjs"), require("pretty"));
+		exports["rakutenRexStorybookInspectJsx"] = factory(require("react"), require("@storybook/addons"), require("prismjs"), require("pretty"));
 	else
-		root["rakutenRexStorybookInspectHtml"] = factory(root["React"], root["StorybookAddons"], root["prismjs"], root["pretty"]);
-})(window, function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__1__, __WEBPACK_EXTERNAL_MODULE__4__, __WEBPACK_EXTERNAL_MODULE__13__) {
+		root["rakutenRexStorybookInspectJsx"] = factory(root["React"], root["StorybookAddons"], root["prismjs"], root["pretty"]);
+})(window, function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__1__, __WEBPACK_EXTERNAL_MODULE__5__, __WEBPACK_EXTERNAL_MODULE__14__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -100,7 +100,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 22);
+/******/ 	return __webpack_require__(__webpack_require__.s = 24);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -130,7 +130,8 @@ function _assertThisInitialized(self) {
 module.exports = _assertThisInitialized;
 
 /***/ }),
-/* 3 */
+/* 3 */,
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -209,16 +210,16 @@ exports.GET_CURRENT_STORY = GET_CURRENT_STORY;
 exports.CHANNEL_CREATED = CHANNEL_CREATED;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__4__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__5__;
 
 /***/ }),
-/* 5 */,
 /* 6 */,
 /* 7 */,
-/* 8 */
+/* 8 */,
+/* 9 */
 /***/ (function(module, exports) {
 
 function _classCallCheck(instance, Constructor) {
@@ -230,7 +231,7 @@ function _classCallCheck(instance, Constructor) {
 module.exports = _classCallCheck;
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports) {
 
 function _defineProperties(target, props) {
@@ -252,7 +253,7 @@ function _createClass(Constructor, protoProps, staticProps) {
 module.exports = _createClass;
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var _typeof = __webpack_require__(18);
@@ -270,7 +271,7 @@ function _possibleConstructorReturn(self, call) {
 module.exports = _possibleConstructorReturn;
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 function _getPrototypeOf(o) {
@@ -283,7 +284,7 @@ function _getPrototypeOf(o) {
 module.exports = _getPrototypeOf;
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var setPrototypeOf = __webpack_require__(19);
@@ -306,13 +307,12 @@ function _inherits(subClass, superClass) {
 module.exports = _inherits;
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE__13__;
+module.exports = __WEBPACK_EXTERNAL_MODULE__14__;
 
 /***/ }),
-/* 14 */,
 /* 15 */,
 /* 16 */,
 /* 17 */,
@@ -358,7 +358,9 @@ module.exports = _setPrototypeOf;
 
 /***/ }),
 /* 21 */,
-/* 22 */
+/* 22 */,
+/* 23 */,
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -373,19 +375,19 @@ var addons_ = __webpack_require__(1);
 var addons_default = /*#__PURE__*/__webpack_require__.n(addons_);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/classCallCheck.js
-var classCallCheck = __webpack_require__(8);
+var classCallCheck = __webpack_require__(9);
 var classCallCheck_default = /*#__PURE__*/__webpack_require__.n(classCallCheck);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/createClass.js
-var createClass = __webpack_require__(9);
+var createClass = __webpack_require__(10);
 var createClass_default = /*#__PURE__*/__webpack_require__.n(createClass);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js
-var possibleConstructorReturn = __webpack_require__(10);
+var possibleConstructorReturn = __webpack_require__(11);
 var possibleConstructorReturn_default = /*#__PURE__*/__webpack_require__.n(possibleConstructorReturn);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/getPrototypeOf.js
-var getPrototypeOf = __webpack_require__(11);
+var getPrototypeOf = __webpack_require__(12);
 var getPrototypeOf_default = /*#__PURE__*/__webpack_require__.n(getPrototypeOf);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/assertThisInitialized.js
@@ -393,23 +395,23 @@ var assertThisInitialized = __webpack_require__(2);
 var assertThisInitialized_default = /*#__PURE__*/__webpack_require__.n(assertThisInitialized);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/inherits.js
-var inherits = __webpack_require__(12);
+var inherits = __webpack_require__(13);
 var inherits_default = /*#__PURE__*/__webpack_require__.n(inherits);
 
 // EXTERNAL MODULE: ./node_modules/@storybook/core-events/dist/index.js
-var dist = __webpack_require__(3);
+var dist = __webpack_require__(4);
 
 // EXTERNAL MODULE: external {"root":"pretty","commonjs2":"pretty","commonjs":"pretty","amd":"pretty","umd":"pretty"}
-var external_root_pretty_commonjs2_pretty_commonjs_pretty_amd_pretty_umd_pretty_ = __webpack_require__(13);
+var external_root_pretty_commonjs2_pretty_commonjs_pretty_amd_pretty_umd_pretty_ = __webpack_require__(14);
 var external_root_pretty_commonjs2_pretty_commonjs_pretty_amd_pretty_umd_pretty_default = /*#__PURE__*/__webpack_require__.n(external_root_pretty_commonjs2_pretty_commonjs_pretty_amd_pretty_umd_pretty_);
 
 // EXTERNAL MODULE: external {"root":"prismjs","commonjs2":"prismjs","commonjs":"prismjs","amd":"prismjs","umd":"prismjs"}
-var external_root_prismjs_commonjs2_prismjs_commonjs_prismjs_amd_prismjs_umd_prismjs_ = __webpack_require__(4);
+var external_root_prismjs_commonjs2_prismjs_commonjs_prismjs_amd_prismjs_umd_prismjs_ = __webpack_require__(5);
 
 // EXTERNAL MODULE: ./node_modules/prismjs/themes/prism.css
 var prism = __webpack_require__(20);
 
-// CONCATENATED MODULE: ./src/storybook-inspect-html/InspectHtml.jsx
+// CONCATENATED MODULE: ./src/storybook-inspect-jsx/InspectJsx.jsx
 
 
 
@@ -426,32 +428,32 @@ var prism = __webpack_require__(20);
 
 
 
-var InspectHtml_InspectHtml =
+var InspectJsx_InspectJsx =
 /*#__PURE__*/
 function (_React$Component) {
-  inherits_default()(InspectHtml, _React$Component);
+  inherits_default()(InspectJsx, _React$Component);
 
-  function InspectHtml() {
+  function InspectJsx() {
     var _getPrototypeOf2;
 
     var _this;
 
-    classCallCheck_default()(this, InspectHtml);
+    classCallCheck_default()(this, InspectJsx);
 
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
 
-    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(InspectHtml)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(InspectJsx)).call.apply(_getPrototypeOf2, [this].concat(args)));
     _this.state = {
-      html: ''
+      jsx: ''
     };
     _this.onAddHtml = _this.onAddHtml.bind(assertThisInitialized_default()(_this));
     _this.onStoryChange = _this.onStoryChange.bind(assertThisInitialized_default()(_this));
     return _this;
   }
 
-  createClass_default()(InspectHtml, [{
+  createClass_default()(InspectJsx, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       var api = this.props.api;
@@ -476,7 +478,7 @@ function (_React$Component) {
           channel = _this$props.channel,
           api = _this$props.api;
       api.off(dist["STORY_CHANGED"], this.onStoryChange);
-      channel.removeListener('storybook/inspecthtml/add_html', this.onAddHtml);
+      channel.removeListener('storybook/inspectjsx/add_jsx', this.onAddHtml);
     }
   }, {
     key: "onChannelActions",
@@ -484,8 +486,8 @@ function (_React$Component) {
       var _this2 = this;
 
       var channel = this.props.channel;
-      channel.on('storybook/inspecthtml/add_html', function (html) {
-        var doubleQuotesPatch = html.replace(/&quot;/gi, '"');
+      channel.on('storybook/inspectjsx/add_jsx', function (jsx) {
+        var doubleQuotesPatch = jsx.replace(/&quot;/gi, '"');
         var cleanHtml = doubleQuotesPatch;
 
         _this2.onAddHtml(cleanHtml);
@@ -498,19 +500,19 @@ function (_React$Component) {
     }
   }, {
     key: "onAddHtml",
-    value: function onAddHtml(html) {
-      var formatedHtml = external_root_pretty_commonjs2_pretty_commonjs_pretty_amd_pretty_umd_pretty_default()(html);
+    value: function onAddHtml(jsx) {
+      var formatedHtml = external_root_pretty_commonjs2_pretty_commonjs_pretty_amd_pretty_umd_pretty_default()(jsx);
       var highlightHtml = Object(external_root_prismjs_commonjs2_prismjs_commonjs_prismjs_amd_prismjs_umd_prismjs_["highlight"])(formatedHtml, // eslint-disable-next-line no-undef
-      external_root_prismjs_commonjs2_prismjs_commonjs_prismjs_amd_prismjs_umd_prismjs_["languages"].markup, 'html');
+      external_root_prismjs_commonjs2_prismjs_commonjs_prismjs_amd_prismjs_umd_prismjs_["languages"].markup, 'jsx');
       this.setState({
-        html: highlightHtml
+        jsx: highlightHtml
       });
     }
   }, {
     key: "render",
     value: function render() {
       var active = this.props.active;
-      var html = this.state.html;
+      var jsx = this.state.jsx;
 
       if (active) {
         return external_root_React_commonjs2_react_commonjs_react_amd_react_umd_react_default.a.createElement("div", {
@@ -519,7 +521,7 @@ function (_React$Component) {
           }
         }, external_root_React_commonjs2_react_commonjs_react_amd_react_umd_react_default.a.createElement("pre", null, external_root_React_commonjs2_react_commonjs_react_amd_react_umd_react_default.a.createElement("code", {
           dangerouslySetInnerHTML: {
-            __html: html
+            __html: jsx
           }
         })));
       }
@@ -528,10 +530,10 @@ function (_React$Component) {
     }
   }]);
 
-  return InspectHtml;
+  return InspectJsx;
 }(external_root_React_commonjs2_react_commonjs_react_amd_react_umd_react_default.a.Component);
 
-InspectHtml_InspectHtml.displayName = "InspectHtml";
+InspectJsx_InspectJsx.displayName = "InspectJsx";
 
 // CONCATENATED MODULE: ./src/register/register.jsx
 /* eslint-disable react/prop-types */
@@ -542,11 +544,11 @@ InspectHtml_InspectHtml.displayName = "InspectHtml";
 
 /* harmony default export */ var register = __webpack_exports__["default"] = (addons_default.a.register('storybook/inspecthtml', function (api) {
   addons_default.a.addPanel('storybook/inspecthtml/panel', {
-    title: 'Inspect HTML',
+    title: 'Inspect JSX',
     render: function render(_ref) {
       var active = _ref.active;
       var channel = addons_default.a.getChannel();
-      return external_root_React_commonjs2_react_commonjs_react_amd_react_umd_react_default.a.createElement(InspectHtml_InspectHtml, {
+      return external_root_React_commonjs2_react_commonjs_react_amd_react_umd_react_default.a.createElement(InspectJsx_InspectJsx, {
         channel: channel,
         api: api,
         active: active,

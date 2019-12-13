@@ -1,4 +1,4 @@
-# ReX React UI Component: storybook-inspect-html
+# ReX React UI Component: storybook-inspect-jsx
 
 This project is part of ReX Design System and it can be used to create UI Components compatible with:
 
@@ -9,13 +9,13 @@ React, HTML/CSS and Vue.js
 <img src="project-scripts/webpack/markdown/logos/npm.svg?sanitize=true" height="16" />
 
 ```
-npm install @rakuten-rex/storybook-inspect-html@1.3.1 --save
+npm install @rakuten-rex/storybook-inspect-jsx@1.3.0 --save
 ```
 
 <img src="project-scripts/webpack/markdown/logos/yarn.svg?sanitize=true" height="16" />
 
 ```
-yarn add @rakuten-rex/storybook-inspect-html@1.3.1
+yarn add @rakuten-rex/storybook-inspect-jsx@1.3.0
 ```
 
 # Getting started
@@ -24,9 +24,9 @@ yarn add @rakuten-rex/storybook-inspect-html@1.3.1
 
 For a complete guide of properties for React and HTML classes please visit our Storybook page:  
 
-[<img src="project-scripts/webpack/markdown/logos/storybook.svg?sanitize=true" height="16" />](https://rakuten-rex.github.io/storybook-inspect-html/)   
+[<img src="project-scripts/webpack/markdown/logos/storybook.svg?sanitize=true" height="16" />](https://rakuten-rex.github.io/storybook-inspect-jsx/)   
 
-https://rakuten-rex.github.io/storybook-inspect-html/   
+https://rakuten-rex.github.io/storybook-inspect-jsx/   
 
 
 **Storybook features**
@@ -45,23 +45,22 @@ https://rakuten-rex.github.io/storybook-inspect-html/
 Add this line at the end of the content of `.storybook/addons.js`.   
 
 ```js
-import '@rakuten-rex/storybook-inspect-html/register';
+import '@rakuten-rex/storybook-inspect-jsx/register';
 ```
 
 #### Story
 
-Import the addon in the story file you want to use.   
-Add it as the first decorator due to the addon requires a clean input to render the HTML, the output is clean as well.
+The addon use the original story to get the original JSX of a React component by using jsx-to-string and show it into the panels tab, after that it returns the original story without any changes.
 
 Example: 
 
 Using `MyComponent.stories.jsx`:
 
 ```js
-import { withInspectHtml } from '@rakuten-rex/storybook-inspect-html';
+import { withInspectJsx } from '@rakuten-rex/storybook-inspect-jsx';
 
 const stories = storiesOf('MyComponent', module);
-stories.addDecorator(withInspectHtml); // <-- First decorator
+stories.addDecorator(withInspectJsx); // <-- First decorator
 stories.addDecorator(withKnobs);
 stories.addDecorator(withA11y);
 ...
@@ -131,7 +130,7 @@ npm start
 
 ## How to build
 
-The build task will generate a NPM package ready to be published and also a static version of Storybook, one folder for NPM `./npm/@rakuten-rex/storybook-inspect-html` and other one for Github pages `./docs`.   
+The build task will generate a NPM package ready to be published and also a static version of Storybook, one folder for NPM `./npm/@rakuten-rex/storybook-inspect-jsx` and other one for Github pages `./docs`.   
 
 ```
 npm run build
@@ -162,7 +161,7 @@ npm run publish:component
 
 Once the process finish, take a look to the NPM site:   
 
-https://www.npmjs.com/package/@rakuten-rex/storybook-inspect-html
+https://www.npmjs.com/package/@rakuten-rex/storybook-inspect-jsx
 
 
 # Javascript and React related documents
