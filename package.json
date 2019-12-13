@@ -1,7 +1,7 @@
 {
   "name": "@rakuten-rex/storybook-inspect-jsx",
   "version": "1.2.1",
-  "description": "Inspect a React component HTML output",
+  "description": "Inspect a React component JSX output",
   "main": "src/index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
