@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./storybook-inspect-html/index.js');
+module.exports = require('./storybook-inspect-jsx/index.js');
