@@ -45,23 +45,22 @@ https://rakuten-rex.github.io/__COMPONENT_NAME__/
 Add this line at the end of the content of `.storybook/addons.js`.   
 
 ```js
-import '@rakuten-rex/storybook-inspect-html/register';
+import '@rakuten-rex/storybook-inspect-jsx/register';
 ```
 
 #### Story
 
-Import the addon in the story file you want to use.   
-Add it as the first decorator due to the addon requires a clean input to render the HTML, the output is clean as well.
+The addon use the original story to get the original JSX of a React component by using jsx-to-string and show it into the panels tab, after that it returns the original story without any changes.
 
 Example: 
 
 Using `MyComponent.stories.jsx`:
 
 ```js
-import { withInspectHtml } from '@rakuten-rex/storybook-inspect-html';
+import { withInspectJsx } from '@rakuten-rex/storybook-inspect-jsx';
 
 const stories = storiesOf('MyComponent', module);
-stories.addDecorator(withInspectHtml); // <-- First decorator
+stories.addDecorator(withInspectJsx); // <-- First decorator
 stories.addDecorator(withKnobs);
 stories.addDecorator(withA11y);
 ...
