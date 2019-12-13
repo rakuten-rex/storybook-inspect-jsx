@@ -1,6 +1,6 @@
 /*!
  * 
- * @license @rakuten-rex/storybook-inspect-jsx v1.3.1 2019-12-13
+ * @license @rakuten-rex/storybook-inspect-jsx v1.3.2 2019-12-13
  * register/register.development.js
  * 
  * Copyright (c) 2018-present, Rakuten, Inc.
@@ -516,6 +516,7 @@ function (_React$Component) {
 
       if (active) {
         return external_root_React_commonjs2_react_commonjs_react_amd_react_umd_react_default.a.createElement("div", {
+          className: "addon-inspectjsx-container",
           style: {
             paddingLeft: '20px'
           }
