@@ -5,6 +5,7 @@ import { bool, shape, func } from 'prop-types';
 import { STORY_CHANGED } from '@storybook/core-events';
 import pretty from 'pretty';
 import { highlight, languages } from 'prismjs';
+import 'prismjs/components/prism-jsx';
 import 'prismjs/themes/prism.css';
 
 export default class InspectJsx extends React.Component {
@@ -60,7 +61,7 @@ export default class InspectJsx extends React.Component {
     const highlightHtml = highlight(
       formatedHtml,
       // eslint-disable-next-line no-undef
-      languages.markup,
+      languages.jsx,
       'jsx'
     );
 
