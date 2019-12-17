@@ -1,6 +1,6 @@
 /*!
  * 
- * @license @rakuten-rex/storybook-inspect-jsx v1.3.3 2019-12-13
+ * @license @rakuten-rex/storybook-inspect-jsx v1.3.4 2019-12-17
  * MyComponent/MyComponent.development.js
  * 
  * Copyright (c) 2018-present, Rakuten, Inc.
